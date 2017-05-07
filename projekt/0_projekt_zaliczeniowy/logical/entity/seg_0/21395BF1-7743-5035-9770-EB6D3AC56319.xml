@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="21395BF1-7743-5035-9770-EB6D3AC56319" name="KLIENT">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>informacje o kliencie</comment>
+<commentInRDBMS>informacje o kliencie</commentInRDBMS>
+<generatorID>BAC037F4-2DBC-285A-7094-E5C2F145D798</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="341842CC-96B9-13D3-2B27-E4118DF86FA5">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>53C379F4-6F1D-2641-EA8C-9A8E43A2C106</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plec" id="230AB7C5-276F-2C64-9272-50EF088B31FE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>3D1F83AA-1B35-8EC8-5E70-717A72FB6CB6</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imie" id="E1CF16A0-8BB7-4970-292E-B590E8585D02">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>B50D7B9F-0E24-4295-F441-559D370B52E4</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwisko" id="4D035F73-C0A9-966C-8131-B36BD3B0BA27">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>0E94B34E-B5E6-15A1-156D-F8EA2C2C2D2B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="177A64E2-1595-C748-42BE-8F9C445C85B7">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>886CC996-2D93-371F-5F18-7AE5B82D7121</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADRES ID" id="73BCA7D4-02F6-F819-67CA-8E74B6F0FAAA">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>551A9AE7-F04E-A1A7-9335-CBA45877D22F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<referedAttribute>17CFCC09-44CA-9A98-8007-2A30BEF343CE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="65592D97-C78C-3E1B-5617-A9BDD32DAB3C" name="KLIENT PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>56BEAAA3-C293-B075-70AD-3837C7BF49A3</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>341842CC-96B9-13D3-2B27-E4118DF86FA5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

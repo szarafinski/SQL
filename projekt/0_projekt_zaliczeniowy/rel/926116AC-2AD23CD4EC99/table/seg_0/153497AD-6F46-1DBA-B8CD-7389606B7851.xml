@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="153497AD-6F46-1DBA-B8CD-7389606B7851" name="ZAMOWIENIE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o zamowieniu skladanym przez klienta</comment>
+<commentInRDBMS>informacje o zamowieniu skladanym przez klienta</commentInRDBMS>
+<generatorID>FD29DE2F-1B11-406E-E342-4BE1488D7442</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="76C74E98-5ADC-C33E-CE1F-A8E6853F21D2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>D5A83714-F8D9-AC8D-E85B-40E176D2D3A4</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ZAMOWIENIE_ZAMOWIENIE_ID</notNullConstraintName>
+</Column>
+<Column name="nr_umowy" id="E1784079-9C10-3625-8CA7-63CE9A6C318F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>B6608D25-A95A-CDDB-8516-861D4A8EE4D0</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ZAMOWIENIE_nr_umowy</notNullConstraintName>
+</Column>
+<Column name="data_zawarcia" id="96DF703C-0EE8-0243-0B3B-FF651738016B">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>9E9DD3C4-2D2B-DA66-0C2D-15A3AA5298D3</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ZAMOWIENIE_data_zlozenia</notNullConstraintName>
+</Column>
+<Column name="data_odbioru" id="AE438477-9837-0896-7429-16EB7EFDEB04">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>36C5FCB5-D147-C150-F333-E9BDEADA79E4</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ZAMOWIENIE_data_odbioru</notNullConstraintName>
+</Column>
+<Column name="KLIENT_ID" id="7A52855A-B3AC-227F-B5B3-F81B4E3A9A60">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>7E6B2972-9E4A-C42C-B3D2-336C8CAF0BEA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ZAMOWIENIE_KLIENT_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="8647AFDD-DE6A-9906-99D0-FEC5E68441F6" referredColumn="53C379F4-6F1D-2641-EA8C-9A8E43A2C106"/>
+</associations>
+</Column>
+<Column name="SPRZEDAWCA_ID" id="28187E7D-9EBF-8ED2-E233-E6EEA146BA63">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>C56BA148-EC9D-80CB-594A-7A00D71EB75C</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ZAMOWIENIE_SPRZEDAWCA_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="068724BC-8AE8-FFC1-5CDA-58DC5FD06B45" referredColumn="004D2CC2-D0F8-0B32-4B87-59F57F24B577"/>
+</associations>
+</Column>
+<Column name="STATUS_ZAMOWIENIA_ID" id="F3247351-AF19-3160-E087-F72F68BB1DD2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>64714CD5-5B49-616A-64C6-4B8A0F32514A</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_status_zamowienia_FK</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="1D571FC3-41AE-9E74-A958-75C732841524" referredColumn="99822262-D0E4-DF34-9C6C-FFCFC5B2EF73"/>
+</associations>
+</Column>
+<Column name="UBEZPIECZENIE_ID" id="DB07F7AD-42F4-520F-A973-F70E2549A48B">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>97CC65E2-0945-1319-243F-981098EAF105</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ubezpieczenie_FK</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="78FE4BF9-D20A-61C3-1448-9E730E1A5299" referredColumn="12EF6D61-6426-D041-1DB5-9F8E886A7B26"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7E75D58-2844-0796-D611-56E1E9880F3A" name="ZAMOWIENIE_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>7410A506-A13B-EBD2-5B6C-F8E1B7B5245B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76C74E98-5ADC-C33E-CE1F-A8E6853F21D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F79A951A-44FD-C544-DE3E-46D559AAC451" name="ZAMOWIENIE_SPRZEDAWCA_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>0A805F74-DD10-463B-2C14-4FD85EF2BA32</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28187E7D-9EBF-8ED2-E233-E6EEA146BA63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C09E874-1B62-B8CF-D273-8FF4AAC68DD1" name="STATUS_ZAMOWIENIA_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>A82E44EF-8496-8FB0-CE26-F920ACD9CA7F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3247351-AF19-3160-E087-F72F68BB1DD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73AB3CF8-EAC9-4276-7A5A-7E59708FAC8D" name="ZAMOWIENIE_UBEZPIECZENIE_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>49D62D39-A7D1-86C1-83AA-2ACA0725511E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB07F7AD-42F4-520F-A973-F70E2549A48B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24237327-53E5-865B-8F0A-C85400B55EEA" name="ZAMOWIENIE_KLIENT_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>9D788798-5906-C48B-38BB-01C7CEEE991A</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A52855A-B3AC-227F-B5B3-F81B4E3A9A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ZAMOWIENIE_CK" directorySegmentName="seg_0" id="1234B412-0392-CA42-098F-9CA679B715E1">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:38:36 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>data_odbioru &gt;= data_zawarcia</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ZAMOWIENIE_CK_3" directorySegmentName="seg_0" id="89FF2680-35DA-98EE-5765-C48DA3C8CB30">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 09:11:42 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>nr_umowy like &apos;%/%/%&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

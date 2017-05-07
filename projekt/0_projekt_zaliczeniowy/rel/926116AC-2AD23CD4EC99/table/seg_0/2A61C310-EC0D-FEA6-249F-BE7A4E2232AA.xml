@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A61C310-EC0D-FEA6-249F-BE7A4E2232AA" name="PAKIET_DODATKOWY">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o pakeitach dodatkowych dostepnych do dokupienia</comment>
+<commentInRDBMS>informacje o pakeitach dodatkowych dostepnych do dokupienia</commentInRDBMS>
+<generatorID>AB04D770-D8C4-B91A-F0EB-145CD42ABB58</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<ordsAlias>modyfikacja_auta</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E8FAD9E0-0431-2FAB-2592-1FA32318F82B">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>D90D3855-95DA-74AB-EB71-B468232ABBDA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODYFIKACJA_AUTA_id</notNullConstraintName>
+</Column>
+<Column name="nazwa" id="5F1F4B76-2441-EB6A-236D-1206E110B5E8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>3528DCB4-AD3D-F588-A9F3-B93BB64C513A</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODYFIKACJA_AUTA_nazwa</notNullConstraintName>
+</Column>
+<Column name="opis" id="E12C1BED-6418-3668-78B8-AC56DAA18533">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>77A9E29D-4AC0-D82B-8076-2DF94257184F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cena" id="817A932F-5474-E06B-E941-EEB83BFE20E0">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 21:34:23 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODYFIKACJA_AUTA_cena</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1498936-563B-F892-BE9D-8D5FE043D661" name="PAKIET_DODATKOWY_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>94C30E7B-FA3B-826D-A723-4F81A7DD3660</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8FAD9E0-0431-2FAB-2592-1FA32318F82B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB7BFDCB-7A9D-B456-124F-FEF3551C36DC" name="PAKIET_DODATKOWY_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:56:28 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F1F4B76-2441-EB6A-236D-1206E110B5E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="MODYFIKACJA_AUTA_CK" directorySegmentName="seg_0" id="5CA84F57-FC21-9353-17B1-BD60D694EF19">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 21:34:23 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>cena &gt;0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

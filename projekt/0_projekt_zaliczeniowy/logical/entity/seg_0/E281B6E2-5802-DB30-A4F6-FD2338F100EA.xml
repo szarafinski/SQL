@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E281B6E2-5802-DB30-A4F6-FD2338F100EA" name="LICZBA DRZWI">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>typy nadwozia dla samochodu</comment>
+<commentInRDBMS>typy nadwozia dla samochodu</commentInRDBMS>
+<generatorID>3C02396F-7157-C583-A68B-5B6C11E9B1DE</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="640A82A7-F861-F9B3-1114-25FAD2768CB5">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>5992EA92-BF1B-7C32-2072-C6592DA1E4BF</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drzwi" id="CB499F2F-F486-2D55-DE67-A6A9DD4BF5D9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>C7CA385E-D15A-3CB4-2D61-E4A941B093C7</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67EB7832-31E4-4558-D9FB-FF21C130E16D" name="LICZBA DRZWI PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>852251B8-DB60-CEA8-DD03-EC3EE4E29EAF</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>640A82A7-F861-F9B3-1114-25FAD2768CB5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="897093BC-1B4C-7703-E802-CC85E8649E0E" name="LICZBA DRZWI drzwi UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>F0FB61F8-69E2-5641-B236-2ABBC8CE6474</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>CB499F2F-F486-2D55-DE67-A6A9DD4BF5D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

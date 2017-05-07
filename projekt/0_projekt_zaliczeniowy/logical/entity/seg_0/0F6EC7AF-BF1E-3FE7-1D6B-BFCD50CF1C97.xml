@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F6EC7AF-BF1E-3FE7-1D6B-BFCD50CF1C97" name="UPUST ODDZIALU">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>tablica pokazuje wybrane upusty jakie posiada oddzial</comment>
+<commentInRDBMS>tablica pokazuje wybrane upusty jakie posiada oddzial</commentInRDBMS>
+<generatorID>3C72AE78-E84A-432F-DFAA-15D1D010DBB1</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ODDZIAL ID" id="674A0118-D81B-BE4C-2968-B122BAE67AEF">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>A47E1004-A26A-46DF-8576-804A3D33A1B6</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<referedAttribute>802B7822-4DE1-4C5E-DA0A-4B52D53DE7CA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UPUST ID" id="5F40D5BE-69A0-1809-4804-C6AE029616EE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>FED55470-3B96-2947-9E7A-B04873116290</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<referedAttribute>782E538E-5826-104F-0DA9-2EDF9E099DE4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14B0959F-D652-1DDB-D96E-1B7677723141" name="UPUST ODDZIAL FK PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>70DB8D7E-FC88-796F-C063-95E0C1BC868D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>674A0118-D81B-BE4C-2968-B122BAE67AEF</attributeRef>
+<attributeRef>5F40D5BE-69A0-1809-4804-C6AE029616EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3BF890E-BC43-0AFE-E10F-B0F35671016B" name="UBEZPIECZENIE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o ubezpieczeniu</comment>
+<commentInRDBMS>informacje o ubezpieczeniu</commentInRDBMS>
+<generatorID>EC47BFA1-196F-CA6A-4739-4663502C839B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="12EF6D61-6426-D041-1DB5-9F8E886A7B26">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>FB1CDDAA-C244-0183-ADFB-53970B4CBE5E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UBEZPIECZENIE_ID</notNullConstraintName>
+</Column>
+<Column name="cena" id="062C207E-8937-A87D-1F5F-52947DE19D6D">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>A380F8A0-B14B-326A-22DB-254425CE2AF7</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UBEZPIECZENIE_cena</notNullConstraintName>
+</Column>
+<Column name="data_zawarcia" id="896C171E-8A86-1E6E-7027-912CF8C0A8F8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>1EB5F08D-81DB-E7D1-F785-D693A9579C31</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_data_zawarcia</notNullConstraintName>
+</Column>
+<Column name="poczatek" id="CBB7DC05-C2A3-44C7-F974-6574DCA7F8B7">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>45A4DA35-B87E-96DE-11E3-4A6305FFF24E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UBEZPIECZENIE_poczatek</notNullConstraintName>
+</Column>
+<Column name="koniec" id="734F2878-D957-FF27-CA4A-289A43DA79E9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>29C3D14D-C270-EE19-E5BE-BFFBF4AD1234</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UBEZPIECZENIE_koniec</notNullConstraintName>
+</Column>
+<Column name="UBEZPIECZYCIEL_ID" id="DEF039EA-09C0-46B4-CF60-C92E81ADE4A7">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>423FD5F8-D66C-0E2C-A5E0-5B6BAF6ECEE8</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UBEZPIECZYCIEL_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="AAD52496-B2E8-075E-678F-413E48104DF0" referredColumn="1E2694A3-A8CC-30BE-EEF0-09B7291189B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9BA8761-DBA1-B67B-57A6-F27D0CB04459" name="UBEZPIECZENIE_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>D1CDF6FB-241D-2A04-FBA9-4D74C8C471C3</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12EF6D61-6426-D041-1DB5-9F8E886A7B26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14A036F4-4237-4548-99D8-4891B77362A3" name="UBEZPIECZYCIEL_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>D0883804-C488-0C7F-C0FC-679636B2DF0E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEF039EA-09C0-46B4-CF60-C92E81ADE4A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="UBEZPIECZENIE_CK" directorySegmentName="seg_0" id="4C6EBACE-A149-072A-C2B4-E83CAF2A49E2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:37:11 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>cena &gt;0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="UBEZPIECZENIE_CKv22" directorySegmentName="seg_0" id="30FFCED9-C2A2-0ED1-4475-9246D737620C">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:37:11 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>poczatek &gt;= data_zawarcia</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="UBEZPIECZENIE_CKv32" directorySegmentName="seg_0" id="94BB9DED-DE25-7FFE-2152-92E22DBAD325">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:37:11 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>koniec &lt;= add_months(poczatek, 12)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

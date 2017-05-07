@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83A9BBB9-9D76-E268-EC70-4DBA1640A7DD" name="SILNIK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>dostepne modele silnikow</comment>
+<commentInRDBMS>dostepne modele silnikow</commentInRDBMS>
+<generatorID>2F24155C-3189-918D-BE01-D4F09A542679</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D02240B1-76D1-FB65-77EE-9368DEDEC361">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>368F3BBA-989E-7C8D-9155-6DCD6EA55C8F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SILNIK_ID</notNullConstraintName>
+</Column>
+<Column name="typ" id="31EAF9E7-D3B2-6E07-D3BF-854D89C3CD1A">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>benzyna, diesel</comment>
+<generatorID>A2846D99-9A20-B99A-FCA5-746C7F066060</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<defaultValue>BENZYNA</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SILNIK_typ</notNullConstraintName>
+</Column>
+<Column name="pojemnosc" id="72950066-8BB4-CF23-9A7E-C2ED5CC361C0">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>6DE13236-C0AC-28C5-8475-030642D4E5F2</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SILNIK_pojemnosc</notNullConstraintName>
+</Column>
+<Column name="cena" id="86B67855-FD48-21BC-BAF6-9DE3B7A46C07">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>DE6AB8B0-CCD2-EC96-BA84-1428C32BF60E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SILNIK_cena</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DEE63F4C-BD02-7D53-ADFB-2EED3DC81AB4" name="SILNIK_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>0B239BB6-8FAD-8874-33A3-774D80A0FFCE</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D02240B1-76D1-FB65-77EE-9368DEDEC361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SILNIK_CK" directorySegmentName="seg_0" id="70ACC0C8-CC0C-B655-73A7-5A7622D988B5">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:48:11 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>cena &gt;0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="SILNIK_CK_2" directorySegmentName="seg_0" id="E0DF01E4-A2A2-38B4-303F-A1B3187E2805">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 09:18:33 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>lower(typ) in (&apos;benzyna&apos;, &apos;diesel&apos;, &apos;hybryda&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

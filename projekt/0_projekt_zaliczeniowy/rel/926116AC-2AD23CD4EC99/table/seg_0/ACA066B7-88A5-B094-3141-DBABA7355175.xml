@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACA066B7-88A5-B094-3141-DBABA7355175" name="UBEZPIECZYCIEL">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o ubezpieczycielu</comment>
+<commentInRDBMS>informacje o ubezpieczycielu</commentInRDBMS>
+<generatorID>C917E7EE-5339-AC77-F943-D0F07D3B3458</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1E2694A3-A8CC-30BE-EEF0-09B7291189B7">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>8D88253B-90D0-8CAC-286E-8A395E685505</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="BEFAF594-30F6-A3A8-4AF4-DC97568EF068">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>F7E88C77-7ADA-01AE-85FD-056F23D86BD5</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2EDDF4B-E809-7681-54A5-0610521D0491" name="UBEZPIECZYCIEL_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>25785E64-A0C6-BB54-21E7-46B8219F6513</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E2694A3-A8CC-30BE-EEF0-09B7291189B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E56BD6AF-D16E-4A6A-9FCB-E5C21B454A13" name="UBEZPIECZYCIEL_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>1B417663-5D51-E829-FC07-95443533F513</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEFAF594-30F6-A3A8-4AF4-DC97568EF068"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

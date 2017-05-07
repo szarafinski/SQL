@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAFD4A5E-722A-9E6E-B6BF-69B464901F10" name="SAMOCHOD">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o samochodach</comment>
+<commentInRDBMS>informacje o samochodach</commentInRDBMS>
+<generatorID>64B5D8E8-2A9F-28FF-DB45-1EAF118666DC</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="417133A4-1E1A-6BE7-F78A-0F9D710F33F4">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>8398C235-D4D7-340A-90CD-231C80A7C571</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SAMOCHOD_ID</notNullConstraintName>
+</Column>
+<Column name="nr_vin" id="D5626F09-0076-D28E-FEAC-4BFD38C38BD8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>FEFC2C2B-C644-CADF-3958-91EF8EEF743D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SAMOCHOD_nr_vin</notNullConstraintName>
+</Column>
+<Column name="przejechany_dystans" id="F93AA48D-21A3-F160-BC37-1ADBF024834C">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>CB63C50C-B67E-4B69-20F4-41A16DD58339</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>2</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZAMOWIENIE_ID" id="551BFD9C-EA41-9A12-57AC-1A43B147C47C">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>036734B4-94EF-58F5-2EC5-ED0CEDB70236</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SAMOCHOD_ZAMOWIENIE_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="01575044-EA81-8FB1-3DD3-846D89F4A19D" referredColumn="76C74E98-5ADC-C33E-CE1F-A8E6853F21D2"/>
+</associations>
+</Column>
+<Column name="MODEL_ID" id="995BDABB-00E4-8B2E-CCAF-12D806A666BA">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>EEE0AE9A-0F61-289D-671B-0A1C9E950A99</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SAMOCHOD_MODEL_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="83271F13-69F1-6074-D942-4ED29723C4C7" referredColumn="FD0A6CC3-B66C-AAD0-E883-B0ED2D807332"/>
+</associations>
+</Column>
+<Column name="SILNIK_ID" id="AFA0A4CD-34C0-6967-A627-8F00A504E2E0">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>044EC235-C2DE-6042-89B6-FCB5FA2DBF1E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_SAMOCHOD_SILNIK_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="6BCA5914-B5FF-9C2C-4FAC-7749CDB90216" referredColumn="D02240B1-76D1-FB65-77EE-9368DEDEC361"/>
+</associations>
+</Column>
+<Column name="KOLOR_ID" id="8017E5B1-78FB-D2D9-0368-EDC95A2ED969">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-11 09:30:25 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="212DCD12-ECDE-BCEB-9EAA-F198B93253C0" referredColumn="C49CEC69-01C7-7175-3619-F2B2BE48CE15"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72856BBD-139C-BC2F-EB9C-44E38320FFBB" name="SAMOCHOD_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>55D4E190-631A-1F02-D6A1-E3ADB3BD4977</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="417133A4-1E1A-6BE7-F78A-0F9D710F33F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E29F4FED-F1E2-E8C0-D1C2-434CB16FB6E2" name="SAMOCHOD_MODEL_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>3E4BFA32-5B9B-5AA2-5CBA-5F58667C4585</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="995BDABB-00E4-8B2E-CCAF-12D806A666BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="800FF768-BFE2-E6FF-291B-5D6B9E5554E1" name="SAMOCHOD_SILNIK_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>82EF0A5F-3F46-E720-2D87-2C5574A2120F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFA0A4CD-34C0-6967-A627-8F00A504E2E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E7CCB71-0D7C-3057-C7CB-28A80D8A122C" name="SAMOCHOD_ZAMOWIENIE_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>11020B9D-848A-453D-D3F1-7C6CF82DB9AC</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="551BFD9C-EA41-9A12-57AC-1A43B147C47C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B14CEB6-A0D8-BA89-00B3-F04D1C578FA8" name="SAMOCHOD_KOLOR_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-11 09:30:25 UTC</createdTime>
+<generatorID>F19F53D1-4C67-E085-3393-65FA71833A96</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8017E5B1-78FB-D2D9-0368-EDC95A2ED969"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SAMOCHOD_CK" directorySegmentName="seg_0" id="B2A0A1B6-A8C9-27DF-A4A9-D10A6AF702D4">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 14:47:46 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>przejechany_dystans &gt;= 0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

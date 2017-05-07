@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C72AE78-E84A-432F-DFAA-15D1D010DBB1" name="UPUST_ODDZIALU">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:34:13 UTC</createdTime>
+<comment>tablica pokazuje wybrane upusty jakie posiada oddzial</comment>
+<commentInRDBMS>tablica pokazuje wybrane upusty jakie posiada oddzial</commentInRDBMS>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<ordsAlias>upust_oddzial_fk</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ODDZIAL_ID" id="E75C98B6-5259-10AC-631D-A412DB61A009">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:34:13 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50D18EE8-6AAA-A545-A0BF-C1F1BD9D63A0" referredColumn="C9427C78-3B95-BE30-2BED-E3C93304559F"/>
+</associations>
+</Column>
+<Column name="UPUST_ID" id="92787BB5-B137-030B-7B30-E06BCDDD34B9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:34:13 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37F93EC3-5498-65CC-040F-64018199FA6F" referredColumn="9A57D4AF-066B-2879-C84C-9ABF17B99079"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70DB8D7E-FC88-796F-C063-95E0C1BC868D" name="UPUST_ODDZIALU_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:34:13 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E75C98B6-5259-10AC-631D-A412DB61A009"/>
+<colUsage columnID="92787BB5-B137-030B-7B30-E06BCDDD34B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="878BE417-9EEB-20DB-AB44-7CBF2F65A27A" name="UPUST_ODDZIALU_ODDZIAL_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:34:13 UTC</createdTime>
+<generatorID>2D318CC2-1A81-E142-7643-9A1972F3EFFC</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E75C98B6-5259-10AC-631D-A412DB61A009"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FD114BA-F13D-48C8-55E5-26BFE1F24D4D" name="UPUST_ODDZIALU_UPUST_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:34:13 UTC</createdTime>
+<generatorID>2D318CC2-1A81-E142-7643-9A1972F3EFFC</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92787BB5-B137-030B-7B30-E06BCDDD34B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

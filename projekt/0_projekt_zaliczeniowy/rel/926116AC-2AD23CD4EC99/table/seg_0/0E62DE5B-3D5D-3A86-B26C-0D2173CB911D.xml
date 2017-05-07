@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E62DE5B-3D5D-3A86-B26C-0D2173CB911D" name="STATUS_PLATNOSCI">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje czy platnosc zostala zaksiegowana, nadplata, do zwrotu</comment>
+<commentInRDBMS>informacje czy platnosc zostala zaksiegowana, nadplata, do zwrotu</commentInRDBMS>
+<generatorID>AC565777-6BD3-E276-8E9C-D598BC6E624D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9D43AD9B-2648-0CBF-76DE-8209C34E33BC">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>AE39C97C-D288-8D46-965F-1E7ED6F6139B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="E26B802E-80AD-D0B3-0DD2-78EB3DBF2930">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>zaplacone, brak, zaksiegowano</comment>
+<generatorID>28A7A341-BC54-11FE-E957-D050794106EF</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDCAB6BE-9375-73B4-58CA-BAC67F6201D8" name="STATUS_PLATNOSCI_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>28E8EBBD-3C11-D96E-48FF-CB0C8729C08E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D43AD9B-2648-0CBF-76DE-8209C34E33BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E27BDB54-00F8-7FB3-099E-D1F3817282A3" name="STATUS_PLATNOSCI_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>485E6FFF-3568-6331-9466-530C4EAEC341</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E26B802E-80AD-D0B3-0DD2-78EB3DBF2930"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

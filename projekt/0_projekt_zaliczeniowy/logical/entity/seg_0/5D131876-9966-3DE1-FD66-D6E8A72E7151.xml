@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D131876-9966-3DE1-FD66-D6E8A72E7151" name="SILNIK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>dostepne modele silnikow</comment>
+<commentInRDBMS>dostepne modele silnikow</commentInRDBMS>
+<generatorID>83A9BBB9-9D76-E268-EC70-4DBA1640A7DD</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="B969C0F7-4D45-BF20-3FF7-9ADD3A54C1DC">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>D02240B1-76D1-FB65-77EE-9368DEDEC361</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="typ" id="18F79B09-AC0F-AB39-0476-30203736ED1D">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>benzyna, diesel</comment>
+<generatorID>31EAF9E7-D3B2-6E07-D3BF-854D89C3CD1A</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<defaultValue>BENZYNA</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pojemnosc" id="8FD06FBE-BF77-5CF8-84A8-1A8BDFE5B004">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>72950066-8BB4-CF23-9A7E-C2ED5CC361C0</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cena" id="11AB3A9D-1952-B7F6-B287-9DEE0A586F00">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>86B67855-FD48-21BC-BAF6-9DE3B7A46C07</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0FB14A6C-EED7-5917-AC38-94D6C01CCA20" name="SILNIK PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>DEE63F4C-BD02-7D53-ADFB-2EED3DC81AB4</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B969C0F7-4D45-BF20-3FF7-9ADD3A54C1DC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

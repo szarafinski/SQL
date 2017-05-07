@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00654D03-7142-325D-7EC9-0903B2B6D7F9" name="KOLOR">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o kolorze dostepnym dla samochodu</comment>
+<commentInRDBMS>informacje o kolorze dostepnym dla samochodu</commentInRDBMS>
+<generatorID>55425145-AC53-7096-C3F4-D52F8D6566F0</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C49CEC69-01C7-7175-3619-F2B2BE48CE15">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>FA1D651B-8512-37FD-E5EE-4CC99823BAE6</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_KOLOR_id</notNullConstraintName>
+</Column>
+<Column name="nazwa" id="C7142030-E1A7-4DB6-0360-A8D01B738B6D">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>44659BC6-0632-215B-DB0D-0A86606BB792</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_KOLOR_nazwa</notNullConstraintName>
+</Column>
+<Column name="odcien" id="D3953D53-0E00-FB66-7D7E-0F8DDC39CAA9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>nazwa marketingowa</comment>
+<commentInRDBMS>marketingowa nazwa koloru</commentInRDBMS>
+<generatorID>B61FBA4B-3588-5746-B695-22A41055386C</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_KOLOR_odcien</notNullConstraintName>
+</Column>
+<Column name="cena" id="971CC3D2-36C1-902B-90EC-813E15687D9D">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>4B785958-4074-74AB-07C7-5B26D803E843</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_KOLOR_cena</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43599B83-1BAB-3032-392C-FD3FFE37607D" name="KOLOR_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>F19F53D1-4C67-E085-3393-65FA71833A96</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C49CEC69-01C7-7175-3619-F2B2BE48CE15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="KOLOR_CK" directorySegmentName="seg_0" id="D6EC1545-4A56-E757-17EA-AE085CC8B154">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:48:28 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>cena &gt; 0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

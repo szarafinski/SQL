@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B53A9B9-8CA4-36F9-26D1-439E7232A546" name="KOLOR">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>informacje o kolorze dostepnym dla samochodu</comment>
+<commentInRDBMS>informacje o kolorze dostepnym dla samochodu</commentInRDBMS>
+<generatorID>00654D03-7142-325D-7EC9-0903B2B6D7F9</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="CCEE1702-A91D-C309-17D8-506FBFF72555">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>C49CEC69-01C7-7175-3619-F2B2BE48CE15</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="9029CD6D-1EE7-C61E-667E-E3905A9C18BC">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>C7142030-E1A7-4DB6-0360-A8D01B738B6D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="odcien" id="BAAA5658-8467-5A9D-11C2-626506015B4C">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<comment>nazwa marketingowa</comment>
+<commentInRDBMS>marketingowa nazwa koloru</commentInRDBMS>
+<generatorID>D3953D53-0E00-FB66-7D7E-0F8DDC39CAA9</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cena" id="EFDC629B-8646-CD37-2B2A-106E016F888B">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>971CC3D2-36C1-902B-90EC-813E15687D9D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C04C8CFA-D932-9158-8E91-65B16A13A2DD" name="KOLOR PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>43599B83-1BAB-3032-392C-FD3FFE37607D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CCEE1702-A91D-C309-17D8-506FBFF72555</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

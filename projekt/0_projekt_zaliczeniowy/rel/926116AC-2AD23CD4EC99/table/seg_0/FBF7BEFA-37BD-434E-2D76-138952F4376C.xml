@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBF7BEFA-37BD-434E-2D76-138952F4376C" name="WYBRANE_USLUGI">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:02:42 UTC</createdTime>
+<comment>wybrane uslugi dodatkowe do zamowienia</comment>
+<commentInRDBMS>wybrane uslugi dodatkowe do zamowienia</commentInRDBMS>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<ordsAlias>wybrane_dodatki</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ZAMOWIENIE_ID" id="B4444708-36E1-08B5-A8B6-A5E5E49CDD6A">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:02:42 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="683A64B2-2A7D-EE3E-9815-54105413BFC8" referredColumn="76C74E98-5ADC-C33E-CE1F-A8E6853F21D2"/>
+</associations>
+</Column>
+<Column name="USLUGI_DODATKOWE_ID" id="32A18892-03FF-48A0-FE4E-DE06729C96B9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:02:42 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBC0DD6D-D004-AC47-F8EB-C583B6C78D0A" referredColumn="DBCEFA98-08BA-5955-FA74-5B9EA4F7768D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE397504-D8D6-345F-E608-16731051DB59" name="WYBRANE_DODATKI_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:02:42 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4444708-36E1-08B5-A8B6-A5E5E49CDD6A"/>
+<colUsage columnID="32A18892-03FF-48A0-FE4E-DE06729C96B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68E29AA3-A12B-6839-36E2-51A618E8F732" name="WYBRANE_DODATKI_ZAMOWIENIE_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:02:42 UTC</createdTime>
+<generatorID>FEBAA853-EF9B-8562-06FD-8219BBFD9001</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4444708-36E1-08B5-A8B6-A5E5E49CDD6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CFF6550-546F-BCE4-D790-C1ABA40E16C5" name="WYBRANE_USLUGI_DODATKOWE_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:02:42 UTC</createdTime>
+<generatorID>FEBAA853-EF9B-8562-06FD-8219BBFD9001</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32A18892-03FF-48A0-FE4E-DE06729C96B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

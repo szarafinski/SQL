@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8E5A833-6670-B45D-6077-23921D033318" name="RODZAJ_PLATNOSCI">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o rodzaju platnosci: karta, gotowka, przelew, kredyt</comment>
+<commentInRDBMS>informacje o rodzaju platnosci: karta, gotowka, przelew, kredyt</commentInRDBMS>
+<generatorID>55CFF939-5DCE-DA08-A040-E62A5E80F0C2</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E631179E-FD8C-D032-2193-9B39D8859DCE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>B4DD1E5B-E924-6EA8-9882-11A23CB49380</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="1A69AB58-590C-0037-7A59-D8B49EB91681">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>karta, przelew, gotowka, kredyt</comment>
+<generatorID>4AC44CC1-F5FC-6BA4-7FA6-A2FC6A2ED1B9</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAE52B0E-40F5-99E0-0EA9-F51612C76282" name="RODZAJ_PLATNOSCI_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>5FD0086E-DA0D-392E-5CBB-1BED2AD889D7</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E631179E-FD8C-D032-2193-9B39D8859DCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4C674DB-CE02-A32D-D2B4-742E5BBB1FF7" name="RODZAJ_PLATNOSCI_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>553C70A7-314B-EC46-C0C3-56AFF1764EF7</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A69AB58-590C-0037-7A59-D8B49EB91681"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

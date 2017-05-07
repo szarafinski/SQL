@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SAMOCHOD_KOLOR_FK" directorySegmentName="seg_0" id="CF366C6A-B3C7-8E57-5012-70B61BF4075B">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>6E9564B9-7555-8AD5-EBD3-BC94A9883CEB</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<sourcePk>C04C8CFA-D932-9158-8E91-65B16A13A2DD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9B53A9B9-8CA4-36F9-26D1-439E7232A546</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4F2EB2AB-9A0B-E58E-AEF9-F54C9B88E022</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

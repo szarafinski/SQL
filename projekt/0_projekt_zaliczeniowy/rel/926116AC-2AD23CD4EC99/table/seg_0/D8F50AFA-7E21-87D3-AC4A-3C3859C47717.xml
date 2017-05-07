@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8F50AFA-7E21-87D3-AC4A-3C3859C47717" name="SPRZEDAWCA">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o sprzedawcy </comment>
+<commentInRDBMS>informacje o sprzedawcy </commentInRDBMS>
+<generatorID>D0B6835C-0D74-B2E9-2B24-D0A1248270B6</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="004D2CC2-D0F8-0B32-4B87-59F57F24B577">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>BDF1B14E-5826-E29D-D6E3-72DEBDDCF244</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="7280844A-A0FB-CF38-253C-758A11E3CAD2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>FF4D34FE-AC18-F3BC-FE6F-3BAE02284179</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="7F3EE089-4405-6148-C747-0FD872699193">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>EB155613-19EF-3A15-9163-02BAA92B376E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="E90273EA-8754-98CE-02F9-BDE640B61F22">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>C768DC54-4ED9-9249-E3B2-66A3D34A8B40</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<defaultValue>pracownicy@firma.pl</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ODDZIAL_ID" id="CB8DC9F1-9EF4-615F-18C3-DFCF12AB3D1F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>2936E6A8-2717-6D0B-8707-1E00817B60AA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_oddzial</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="835B480E-B513-3ADD-D714-38EE8DC08002" referredColumn="C9427C78-3B95-BE30-2BED-E3C93304559F"/>
+</associations>
+</Column>
+<Column name="STANOWISKO_ID" id="DE1092BE-1A69-B2BA-C4FB-9E52B41650C9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>01645CD2-C230-FB74-3B2B-613798A95657</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E4A661C-D3D3-8C34-CEFE-153DF418B3A9" referredColumn="A0084611-D0BC-7D31-4B43-CB9EA1FC963B"/>
+</associations>
+</Column>
+<Column name="pensja" id="A04F9195-9B4E-949C-6586-1ED43BDCB477">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-09 19:02:21 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34C59807-F18C-5F9E-8907-A0D1596E7A48" name="SPRZEDAWCA_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>39DD4A1D-B18C-C472-DF89-E43E4A1662A3</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="004D2CC2-D0F8-0B32-4B87-59F57F24B577"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4D3760A-2D48-CF2C-8824-187B2E1BA391" name="SPRZEDAWCA_ODDZIAL_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>28C6F791-D50A-32B8-74C5-4FC5211AE657</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB8DC9F1-9EF4-615F-18C3-DFCF12AB3D1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99256F6C-B975-2326-2FCA-C666850E91E5" name="SPRZEDAWCA_STANOWISKO_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>1905F8DE-045D-D3AF-F2EA-F487D5A05B04</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE1092BE-1A69-B2BA-C4FB-9E52B41650C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SPRZEDAWCA_CK" directorySegmentName="seg_0" id="C6845B64-A964-A0F5-13A3-37B046C79B9E">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-09 19:02:21 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>pensja &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="SPRZEDAWCA_CK_2" directorySegmentName="seg_0" id="D7A95D64-F444-89F1-263C-6C2769B2D9F9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:55:26 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>email LIKE &apos;%@%.%&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F85D3D4E-9BE3-CCCC-10E8-82F185B37F90" containerWithKeyObject="18D7D44B-87F9-C72B-FD44-40E5D86C9F37" localFKIndex="0B26D31C-CD99-3A9D-2347-D84C073A2892" name="PLATNOSC_RODZAJ_PLATNOSCI_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>30EF61AC-958B-837E-7F69-63D6279AF5AB</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<referredTableLongName>RODZAJ_PLATNOSCI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F8E5A833-6670-B45D-6077-23921D033318</referredTableID>
+<keyObject>BAE52B0E-40F5-99E0-0EA9-F51612C76282</keyObject>
+<referredKeyID>BAE52B0E-40F5-99E0-0EA9-F51612C76282</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

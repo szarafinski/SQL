@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STATUS_ZAMOWIENIA_FK" directorySegmentName="seg_0" id="F6BD526C-8939-BEBE-CA7A-DC9630003292">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>1D571FC3-41AE-9E74-A958-75C732841524</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<sourcePk>E7EB5B27-D3D3-CB4E-F38B-E8377CFDBB45</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>903A72EA-9868-DE57-7557-C632A20B4476</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E33CA8BA-E6A2-7303-C645-A4AEC26E0243</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

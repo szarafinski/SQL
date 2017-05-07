@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF1622EE-27C3-3579-DF49-534F2887B3DD" name="UPUST">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>inforamcje o upstach cenowych stsowanych przez oddzial</comment>
+<commentInRDBMS>inforamcje o upstach cenowych stsowanych przez oddzial</commentInRDBMS>
+<generatorID>82D9D123-8A61-275E-6153-B043AC575FD2</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9A57D4AF-066B-2879-C84C-9ABF17B99079">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>9086AD40-DF81-3098-F555-4311775E7EC4</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UPUST_ID</notNullConstraintName>
+</Column>
+<Column name="nazwa" id="EAB89C95-6D3B-175F-21A2-A15AA747D3C9">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>808DDB69-7CD0-F6A1-EFFB-488B03AB22C1</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UPUST_nazwa</notNullConstraintName>
+</Column>
+<Column name="wysokosc" id="8DEEBAB6-DFC5-556B-A56C-5EFC06356177">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>podana w procentach</comment>
+<generatorID>594EA490-68A3-8CFF-299D-BB6776A20394</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UPUST_wysokosc</notNullConstraintName>
+</Column>
+<Column name="data_start" id="345BDB88-AFD9-6BDA-AC58-3CEDE8F529B3">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>4FE4B85A-41C6-09C0-A9CB-A76B30B516C3</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UPUST_data_start</notNullConstraintName>
+</Column>
+<Column name="data_koniec" id="83EE5B6E-7CE8-B764-874B-64269BF41022">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>7A95F8C1-9C86-C747-A3C8-CA85F30DBCFD</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_UPUST_data_koniec</notNullConstraintName>
+</Column>
+<Column name="opis" id="E635D564-DDB7-39E1-5763-52CF28E2C2F4">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:56:13 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>798A7689-E45A-7688-DC11-DCB1455DE057</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A9A18CA-328A-7FB3-5DCE-EFF7C631D5FA" name="UPUST_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>BEF8EEE5-304F-C13C-232A-C7887361B9AA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A57D4AF-066B-2879-C84C-9ABF17B99079"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="UPUST_CK" directorySegmentName="seg_0" id="0848FBAB-B97A-C40E-4C14-28B7ADDF80B6">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:28:59 UTC</createdTime>
+<commentInRDBMS>wysokosc podawana  w zakresie od 0 do 100 jako procentowy upust od ceny</commentInRDBMS>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>wysokosc &gt;= 0 and wysokosc &lt;= 100</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="UPUST_CK_2" directorySegmentName="seg_0" id="DC96704A-9A81-99D8-21FE-D102909CA5D1">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:22:03 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>data_koniec &gt; data_start</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

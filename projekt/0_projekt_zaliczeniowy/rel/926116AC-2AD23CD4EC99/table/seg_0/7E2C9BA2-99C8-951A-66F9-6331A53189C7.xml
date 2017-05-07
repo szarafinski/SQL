@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E2C9BA2-99C8-951A-66F9-6331A53189C7" name="USLUGI_DODATKOWE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o uslugach dodatkowych: pakiet na myjnie, przechowywanie opon itp</comment>
+<commentInRDBMS>informacje o uslugach dodatkowych: pakiet na myjnie, przechowywanie opon itp</commentInRDBMS>
+<generatorID>80FFC283-62F9-73E0-A2C7-990DC3E5263F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DBCEFA98-08BA-5955-FA74-5B9EA4F7768D">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>2384CF57-3A56-7263-DDD1-2DCB68004775</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_USLUGI_DODATKOWE_id</notNullConstraintName>
+</Column>
+<Column name="nazwa" id="0FFB2C71-7C2F-2428-699B-5C502E10DF11">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>6E9DAD8C-BB6A-08C3-6A06-12448E95BE1E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_USLUGI_DODATKOWE_nazwa</notNullConstraintName>
+</Column>
+<Column name="cena" id="F2639C05-DB93-FD9B-C208-666F51FD9DD5">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>40652D47-1FDB-EB26-1050-8F460F334E9F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_USLUGI_DODATKOWE_cena</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12693BC2-95A0-497C-7DE6-D11FB68B7B14" name="USLUGI_DODATKOWE_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>6E96C4B0-2C75-DD8F-9DA7-3A70F7514AE1</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBCEFA98-08BA-5955-FA74-5B9EA4F7768D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="USLUGI_DODATKOWE_CK" directorySegmentName="seg_0" id="1D215C61-F052-0092-DD7A-FA810E87E0B7">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:39:06 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>cena &gt;0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

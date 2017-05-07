@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07700824-3210-D02E-6D19-66C7FF82B0EF" name="KLASA_WYPOSAZENIA">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>klasa s, m, l lub xl, sportowy</comment>
+<commentInRDBMS>klasa s, m, l lub xl, sportowy</commentInRDBMS>
+<generatorID>F24E0186-3D2B-08C3-C742-B834FA30FE4C</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<ordsAlias>klasa_modelu</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="29BB6E1F-4C44-9209-6460-24592EC13FA3">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>19D8E9FF-9EF8-1091-E1C8-3C936895C180</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="DAD531C0-E184-620E-9885-CF1B37DCE04E">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>69E5548C-4E05-3E65-F68B-7DF8C4D4FEDF</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opis" id="6511880F-8D67-2386-A491-F99CFE2003FA">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:47:32 UTC</createdTime>
+<generatorID>B16A722E-5C37-F506-E525-4878AF7192C5</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>798A7689-E45A-7688-DC11-DCB1455DE057</domain>
+<defaultValue>Small</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="583FD0CF-BE6D-7D76-8D0B-2E38F3EF9BD8" name="KLASA_WYPOSAZENIA_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>6DFDD884-332D-50F3-5DB2-A236B2865CE7</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29BB6E1F-4C44-9209-6460-24592EC13FA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDBD6D27-6BA4-8027-529D-4CC7CB70F8EF" name="KLASA_WYPOSAZENIA_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:26:53 UTC</createdTime>
+<generatorID>8BA1D7BC-2645-3878-C413-43CCCEDAA28A</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAD531C0-E184-620E-9885-CF1B37DCE04E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

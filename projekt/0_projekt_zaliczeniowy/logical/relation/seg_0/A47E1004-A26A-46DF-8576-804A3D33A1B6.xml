@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="WYBRANE_UPUSTY" directorySegmentName="seg_0" id="A47E1004-A26A-46DF-8576-804A3D33A1B6">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>50D18EE8-6AAA-A545-A0BF-C1F1BD9D63A0</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<sourcePk>EC2E630D-BA34-7192-EA13-8AD81CD5F07E</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D6585F52-7097-CC8D-338C-EB2E8BBDB0F5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0F6EC7AF-BF1E-3FE7-1D6B-BFCD50CF1C97</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5C61E60-7ECA-2E33-5038-A7C2229B023D" name="ODDZIAL">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o oddziale sprzedawcy</comment>
+<commentInRDBMS>informacje o oddziale sprzedawcy</commentInRDBMS>
+<generatorID>02C8E599-59D2-5FF0-B725-4E4F35B9AD18</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C9427C78-3B95-BE30-2BED-E3C93304559F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>54457B01-B106-6943-8F3C-24B848E37631</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="3521682E-62A9-5DBB-CB29-D2CC994BB905">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>C6A83B85-5EC4-00A5-EA0A-2168FF48DCBC</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="FA90B338-C4D1-90B8-3454-4985B431487F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>0E932BEB-76A3-E61B-1096-8A954FA115C8</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="miasto" id="A52153D6-0878-B0E9-2637-3A68AC329994">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-09 20:50:49 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5A7878B-743C-F908-94EF-4ECEF898A13B" name="ODDZIAL_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>08CC3A14-824E-EC25-8312-CE01747AE523</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9427C78-3B95-BE30-2BED-E3C93304559F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A63DC7AC-FCAA-222C-FC22-8C2A3193A4F0" name="ODDZIAL_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>7B43A836-CB74-59CE-8AB1-4FAEBC3A3AB1</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3521682E-62A9-5DBB-CB29-D2CC994BB905"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ODDZIAL_CK_1" directorySegmentName="seg_0" id="2A7EF461-A80F-A5BC-DBBB-076C7290CEDF">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 08:55:14 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>email LIKE &apos;%@%.%&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

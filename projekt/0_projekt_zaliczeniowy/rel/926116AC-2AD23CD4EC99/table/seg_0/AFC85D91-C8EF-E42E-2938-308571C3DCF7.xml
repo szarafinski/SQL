@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFC85D91-C8EF-E42E-2938-308571C3DCF7" name="PAKIET_PODSTAWOWY">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:53:06 UTC</createdTime>
+<comment>pakiet podstawowy wyposazenia modelu </comment>
+<commentInRDBMS>pakiet podstawowy wyposazenia modelu </commentInRDBMS>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WYPOSAZENIE_ID" id="DA9F450C-74F9-B51F-AA82-6A0BC317382F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:53:06 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3243BF8-0FDF-5B59-1062-693F4C00143C" referredColumn="7E258136-1DDF-38F3-A77D-E596783212FC"/>
+</associations>
+</Column>
+<Column name="KLASA_WYPOSAZENIA_id" id="EDE80586-423A-14F8-3F4C-71AC1FFF9C4D">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:53:06 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DF90004-86B6-F5D7-7BDD-1FE5999B0C1F" referredColumn="29BB6E1F-4C44-9209-6460-24592EC13FA3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C40143B4-D42A-B0FA-70DD-EA28D268D4C0" name="PAKIET_PODSTAWOWY_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:53:06 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA9F450C-74F9-B51F-AA82-6A0BC317382F"/>
+<colUsage columnID="EDE80586-423A-14F8-3F4C-71AC1FFF9C4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="355A3635-7475-7C44-7181-0907EC948541" name="PODSTAWOWE_WYPOSAZENIE_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:53:06 UTC</createdTime>
+<generatorID>678C347A-0213-7EAA-55B3-6DA2B8B9BB20</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA9F450C-74F9-B51F-AA82-6A0BC317382F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A275962-E326-ECBA-9ACF-5F250479BB3F" name="PODSTAWOWE_WYPOSAZENIE_FKv2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 19:53:06 UTC</createdTime>
+<generatorID>678C347A-0213-7EAA-55B3-6DA2B8B9BB20</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDE80586-423A-14F8-3F4C-71AC1FFF9C4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

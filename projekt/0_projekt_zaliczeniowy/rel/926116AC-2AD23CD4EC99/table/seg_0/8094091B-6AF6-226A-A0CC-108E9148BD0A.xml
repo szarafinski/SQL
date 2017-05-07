@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8094091B-6AF6-226A-A0CC-108E9148BD0A" name="ADRES">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>tablica adres dla klientów i oddzialow firmy</comment>
+<commentInRDBMS>tablica adres dla klientów i oddzialow firmy</commentInRDBMS>
+<generatorID>57EE0719-D1BE-0B02-1031-4E8C7BB44D14</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F51E1AE4-E895-79DA-67BC-7C74AD2B06C2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>86C7556B-0812-4E78-7429-DD8AC2D136EA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ADRES_ID</notNullConstraintName>
+</Column>
+<Column name="ulica" id="CD8D2562-4967-E453-9856-9B980E119324">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>966F1C6B-BCDF-4439-A8AD-017D4DF35C93</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EFE3E3A9-7C1D-67B6-55DD-94E0F98524BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ADRES_ulica</notNullConstraintName>
+</Column>
+<Column name="miasto" id="B915DFAD-ED79-7570-0BDC-1A4905A60EEE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>CF4FA411-52A5-DEAC-5BAA-698D488F300F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ADRES_miasto</notNullConstraintName>
+</Column>
+<Column name="nr_domu" id="1E2C35A1-58BC-7E03-6558-65E28C33270A">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>69B933B1-0A11-8DA3-11D0-2130B01E579D</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ADRES_nr_domu</notNullConstraintName>
+</Column>
+<Column name="nr_mieszkania" id="9CAEBC73-0A52-490E-C929-EB77685EE1B8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>8A7232B8-94D2-FCE3-2622-EBA4F325D429</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBD5AFEE-410C-8617-AB83-1D60F88DB47D" name="ADRES_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>42B6A489-FCB5-C2BA-C9A5-B486ACB3AF3F</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F51E1AE4-E895-79DA-67BC-7C74AD2B06C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ADRES_mieszkanie" directorySegmentName="seg_0" id="76C7B33F-8C38-3558-132D-C2489AB6A164">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:25:42 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>nr_mieszkania &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ADRES_dom" directorySegmentName="seg_0" id="ABED8A7C-EADC-D3A4-12D8-1342936D2257">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:25:42 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>nr_domu &gt; 0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

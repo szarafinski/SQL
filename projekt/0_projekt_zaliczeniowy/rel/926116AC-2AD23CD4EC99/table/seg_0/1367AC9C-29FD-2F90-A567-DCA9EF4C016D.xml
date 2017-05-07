@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1367AC9C-29FD-2F90-A567-DCA9EF4C016D" name="WYPOSAZENIE">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>wyposazenie samochodu zarowno podstawowe jak i dodatkowe</comment>
+<commentInRDBMS>wyposazenie samochodu zarowno podstawowe jak i dodatkowe</commentInRDBMS>
+<generatorID>965FE9A4-C7E0-DC72-0F94-7ABB8F3BF442</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7E258136-1DDF-38F3-A77D-E596783212FC">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>53F056FB-3E05-3A02-4722-653B745D8B47</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_wyposazenie_id</notNullConstraintName>
+</Column>
+<Column name="nazwa" id="1F3C3A32-FAD9-0814-2EF4-7EA3A0D3232A">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>2A77A524-23A7-38E5-6FD8-501C56A82325</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>798A7689-E45A-7688-DC11-DCB1455DE057</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_wyposazenie_nazwa</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B66EA1AF-6F0D-34B8-DF2C-5F41589DFE61" name="WYPOSAZENIE_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>F5755EE0-3C00-C89F-0ACC-02F5D3241DCA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E258136-1DDF-38F3-A77D-E596783212FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MODEL_KLASA_WYPOSAZENIA_FK" directorySegmentName="seg_0" id="57F3D724-469D-82D0-86C2-D12CEF2E196A">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:56:08 UTC</createdTime>
+<generatorID>E5DC7750-21F7-84CD-E341-6F7B227E5D1E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<engineerTo>
+<item key="926116AC-78A8-0249-FFDE-2AD23CD4EC99" value="true"/>
+</engineerTo>
+<sourcePk>38C40B4B-62CD-F50C-91A3-5D05CE7447C6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4A07F5FA-C541-B2CA-51F1-B27EC434602B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC2F32E4-8EAC-AD99-06B0-4D5B41B3574F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="577D28F5-5214-8CE3-D992-C3D04FB6E4C7" name="MODEL">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>modele samochodow</comment>
+<commentInRDBMS>modele samochodow</commentInRDBMS>
+<generatorID>D1BDEAD4-7DDC-6F26-0C71-7C53BA71963E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="FD0A6CC3-B66C-AAD0-E883-B0ED2D807332">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>787524AB-1898-CF55-B8B8-37C9AA1C53C6</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODEL_MODEL_ID</notNullConstraintName>
+</Column>
+<Column name="nazwa" id="7087C218-0267-2356-D8B4-C4B7EC4C96D8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>C1D391B3-0793-152D-2D7B-5DAE6B172E31</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODEL_nazwa</notNullConstraintName>
+</Column>
+<Column name="MARKA_id" id="21C3E0A6-2F94-D270-047A-42E01BF7E8BC">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>06970024-98B5-B31E-E59D-5CF576D21651</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODEL_marka_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="9E4A84DA-00CA-CA6B-C79D-93191DEF547F" referredColumn="882B4B68-864C-E1CE-DB57-4A16790FDC96"/>
+</associations>
+</Column>
+<Column name="rok_produkcji" id="D5E54C3A-7967-A48A-BA9D-9F03AC75C927">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>A62E8A47-CE67-2431-AAB5-FF3D06642F14</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODEL_rok_produkcji</notNullConstraintName>
+</Column>
+<Column name="KLASA_WYPOSAZENIA_id" id="059F994F-BB62-585A-EF80-EF68D783A358">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 20:05:21 UTC</createdTime>
+<generatorID>2DDD83D8-AA6D-CDF3-71C7-82F8E037ACA7</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MODEL_klasa_modelu_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="E5DC7750-21F7-84CD-E341-6F7B227E5D1E" referredColumn="29BB6E1F-4C44-9209-6460-24592EC13FA3"/>
+</associations>
+</Column>
+<Column name="cena" id="F8FCE16A-6695-7BC8-E20C-661C20D3254F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 21:34:48 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="liczba_drzwi" id="C96FFBB1-52F0-1E0D-7503-910B4642BBB4">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 22:00:06 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C0C9149-63B8-3113-537C-101E8B6EDB4F" name="MODEL_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>DACBC238-AE68-6E87-61FC-063B62387532</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD0A6CC3-B66C-AAD0-E883-B0ED2D807332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D0B7FF9-35B8-D6A4-329A-911B6A32BA40" name="MODEL_MARKA_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>0EC65125-8C79-5987-02CA-A4F0FB605712</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21C3E0A6-2F94-D270-047A-42E01BF7E8BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4327F0D-58C5-CAD8-6C9A-F112BD37B0D3" name="MODEL_KLASA_WYPOSAZENIA_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 20:05:21 UTC</createdTime>
+<generatorID>C6E92882-0D7C-5FA4-0D40-5E7B4D26AD60</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="059F994F-BB62-585A-EF80-EF68D783A358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="MODEL_CK" directorySegmentName="seg_0" id="A13E4727-CDF8-CA2A-2D2A-B942BAE3742E">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 18:42:05 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>rok_produkcji &gt; 1900</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="MODEL_CKv1" directorySegmentName="seg_0" id="CE4334DB-A666-E5D7-A169-246A20CE4FEF">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 21:34:48 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>cena &gt;0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="MODEL_CK_3" directorySegmentName="seg_0" id="73D6B212-DCF7-F2C1-F485-996CE50DA4BB">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 14:44:27 UTC</createdTime>
+<ownerDesignName>projekt poprawiony</ownerDesignName>
+<rule>liczba_drzwi in (2,3,4,5)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

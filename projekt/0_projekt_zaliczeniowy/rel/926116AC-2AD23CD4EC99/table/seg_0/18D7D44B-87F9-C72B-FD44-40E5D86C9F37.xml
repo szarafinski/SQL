@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18D7D44B-87F9-C72B-FD44-40E5D86C9F37" name="PLATNOSC">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacje o platnosciach</comment>
+<commentInRDBMS>informacje o platnosciach</commentInRDBMS>
+<generatorID>26F82D3B-55F6-F77D-CD46-BDB0D862B13B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="624E7AAA-F86A-E8DA-AFA8-B4910FBCCBD8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>5068E684-AEEA-9B37-E20B-49EDCB4AB795</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PLATNOSC_PLATNOSC_ID</notNullConstraintName>
+</Column>
+<Column name="data_dokonania" id="74AD04CB-F41F-1ADF-8EFE-AD201E3850E2">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>4CA2641D-C6F4-8ECB-C20D-A16147AD2112</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PLATNOSC_data_dokonania</notNullConstraintName>
+</Column>
+<Column name="kwota" id="2C2E7EFE-F612-DD02-8C04-74C4393B885E">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>2C2F8165-AE4C-C073-FB90-6211422E08AB</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A11C3C0-DA87-5C12-CCC2-6EB55F5F8B06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PLATNOSC_kwota</notNullConstraintName>
+</Column>
+<Column name="uwagi_dodatkowe" id="475A8E7B-8D90-8429-04D9-C2BFEA76E434">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>97890B01-5DC4-ABF1-E9C3-3749A0313703</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>798A7689-E45A-7688-DC11-DCB1455DE057</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_PLATNOSCI_ID" id="A0A08FA9-5349-F742-CB24-F66BBB4F6E00">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>B7571951-7FBC-1E3D-F8B9-A9FBE0067AFA</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_status_platnosci_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="4CEFC91F-C25D-A118-2E5D-CD9436CBA726" referredColumn="9D43AD9B-2648-0CBF-76DE-8209C34E33BC"/>
+</associations>
+</Column>
+<Column name="RODZAJ_PLATNOSCI_ID" id="A87A68B0-FCCD-6D59-AC28-E74DA349C46F">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>59C2E296-12BE-5737-4676-FCC2521639C6</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_rodzaj_platnosci_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="F85D3D4E-9BE3-CCCC-10E8-82F185B37F90" referredColumn="E631179E-FD8C-D032-2193-9B39D8859DCE"/>
+</associations>
+</Column>
+<Column name="KLIENT_ID" id="64194CA8-A257-2697-E5B1-5EA3F9BE4670">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>15D06817-42A3-B977-68B2-2C515FE32F31</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PLATNOSC_KLIENT_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="2D4BF380-E5DE-8B28-BC0C-A36C0FC5222D" referredColumn="53C379F4-6F1D-2641-EA8C-9A8E43A2C106"/>
+</associations>
+</Column>
+<Column name="ZAMOWIENIE_ID" id="B3791BEA-1E49-7085-93C7-E532137856BD">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:31:05 UTC</createdTime>
+<generatorID>D8008863-A902-29AF-0DAE-962196DC0C5E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_zamowienie_FK</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="AD8E9601-2F76-6AD1-5093-512A16110D63" referredColumn="76C74E98-5ADC-C33E-CE1F-A8E6853F21D2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A76E60AF-F111-1CE6-D97B-3158A42C69A2" name="PLATNOSC_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>45582694-5667-78E1-0511-839012048FD9</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="624E7AAA-F86A-E8DA-AFA8-B4910FBCCBD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C0F73B7-C9D9-2A12-510E-7DDBAF3944F5" name="PLATNOSC_KLIENT_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>57779006-DB8C-BE1A-DC5A-68B80DB6B7AB</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64194CA8-A257-2697-E5B1-5EA3F9BE4670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B26D31C-CD99-3A9D-2347-D84C073A2892" name="PLATNOSC_RODZAJ_PLATNOSCI_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>30EF61AC-958B-837E-7F69-63D6279AF5AB</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A87A68B0-FCCD-6D59-AC28-E74DA349C46F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="432693FD-C070-CEE0-8060-3AFD22A8B72A" name="PLATNOSC_STATUS_PLATNOSCI_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>FEAC2306-1D4E-CA54-D708-EAB2BE668936</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0A08FA9-5349-F742-CB24-F66BBB4F6E00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0885B1E6-21B4-DFF0-39D1-6F0858C4DB0A" name="PLATNOSC_ZAMOWIENIE_FK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:31:05 UTC</createdTime>
+<generatorID>47D21523-6821-6003-D3D1-DD1D2A1BFC51</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3791BEA-1E49-7085-93C7-E532137856BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

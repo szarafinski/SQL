@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE91A6AD-4A36-A84F-6D39-953D9D0CC585" name="WYBRANE_PAKIETY">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:57:10 UTC</createdTime>
+<comment>informacja o wybranych pakietch dodatkowychd dla konkretnego samochodu</comment>
+<commentInRDBMS>informacja o wybranych pakietch dodatkowychd dla konkretnego samochodu</commentInRDBMS>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<ordsAlias>relation_56</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SAMOCHOD_ID" id="89ED7C63-17D6-4A2E-3D71-FCFB9DA5F87C">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:57:10 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88955342-C978-DAFC-C3CE-885C40D32801" referredColumn="417133A4-1E1A-6BE7-F78A-0F9D710F33F4"/>
+</associations>
+</Column>
+<Column name="PAKIET_DODATKOWY_ID" id="17A531A1-E728-F2D6-AE95-7D7A2E8AEC8B">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:57:10 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CACC2840-E87B-A309-E27B-221CF9F2564C" referredColumn="E8FAD9E0-0431-2FAB-2592-1FA32318F82B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DDC29C7-5A54-890C-4052-4811134A5F20" name="Relation_56_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:57:10 UTC</createdTime>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89ED7C63-17D6-4A2E-3D71-FCFB9DA5F87C"/>
+<colUsage columnID="17A531A1-E728-F2D6-AE95-7D7A2E8AEC8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C9A26B3-E806-66CE-4C24-3B015050276A" name="PAKIET_SAMOCHODU">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:57:10 UTC</createdTime>
+<generatorID>F2FEC1E5-D713-ADB0-FC7B-7D95CE6E9715</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89ED7C63-17D6-4A2E-3D71-FCFB9DA5F87C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9205E07A-51DB-6F6E-45E3-D2AB97931EA0" name="WYBRANY_DODATEK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-10 13:57:10 UTC</createdTime>
+<generatorID>F2FEC1E5-D713-ADB0-FC7B-7D95CE6E9715</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17A531A1-E728-F2D6-AE95-7D7A2E8AEC8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

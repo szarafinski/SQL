@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB075D1F-26B7-87E6-7105-5C01EEA0E008" name="STATUS_ZAMOWIENIA">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<comment>informacja czy zamowienie jest w trakcie realizacji, do obioru lub odebrane</comment>
+<commentInRDBMS>informacja czy zamowienie jest w trakcie realizacji, do obioru lub odebrane</commentInRDBMS>
+<generatorID>19CF4717-3041-44BD-63D6-D0B240B1919B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="99822262-D0E4-DF34-9C6C-FFCFC5B2EF73">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>F1F94B88-F1EB-66FB-AA6D-CECD3475969E</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EABD47C8-58AC-3933-10BB-20FE2007BBAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="F153293A-CAEE-5B7C-1B2B-20E89CC0AAC8">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>72EC1501-F4D5-51EE-8AF5-EA022A49350A</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>284CEEB3-FC75-95F7-1CB9-33858564988B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A543E3D-B097-5EF1-A9F3-9EA28060236F" name="STATUS_ZAMOWIENIA_PK">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>2E1EFAE0-2A3B-45EA-68A3-7447EFCB50D5</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99822262-D0E4-DF34-9C6C-FFCFC5B2EF73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1563B56E-0C57-E534-3553-2741DC462389" name="STATUS_ZAMOWIENIA_nazwa_UN">
+<createdBy>KrzysieK</createdBy>
+<createdTime>2017-01-08 13:18:10 UTC</createdTime>
+<generatorID>C16B744F-5062-A772-E217-679D872D267B</generatorID>
+<ownerDesignName>0_projekt_zaliczeniowy</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F153293A-CAEE-5B7C-1B2B-20E89CC0AAC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
